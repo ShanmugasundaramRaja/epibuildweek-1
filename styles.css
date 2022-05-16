@@ -15,8 +15,6 @@ html {
 
 .epicode_logo {
     position: absolute;
-    height: 20px;
-    width: 30px;
     top: 30px;
     left: 120px;
 }
@@ -107,7 +105,6 @@ input.check-box {
     right: 20%;
     cursor: pointer;
     border-color: aqua;
-    color: #111;
     background: #14dcff;
     box-shadow: 0 0 50px #14dcff;
 }
