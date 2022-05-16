@@ -38,3 +38,51 @@ html {
     font-size: 40px;
     font-family: Verdana;
 }
+
+.instructions h3 {
+    position: absolute;
+    top: 52%;
+    left: 120px;
+    font-family: Arial;
+    font-size: 30px;
+    color: rgb(194, 18, 141);
+}
+
+.instructions p {
+    position: absolute;
+    top: 60%;
+    left: 120px;
+    font-size: 20px;
+    font-family: Arial;
+    color: white;
+
+}
+
+.instructions ul {
+    position: absolute;
+    color: white;
+    top: 73%;
+    left: 100px;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+span {
+    font-weight: bold;
+}
+
+.checkbox {
+    position: absolute;
+    color: white;
+    left: 120px;
+    bottom: 15px;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+input.check-box {
+    width: 20px;
+    height: 20px;
+    border-color: white;
+    background-color: rgb(11, 17, 59)
+}
