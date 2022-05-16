@@ -1,0 +1,40 @@
+body,
+html {
+    height: 100%;
+    position: relative;
+}
+
+.bg {
+    position: relative;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+}
+
+.epicode_logo {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 30px;
+    left: 120px;
+}
+
+.heading {
+    position: absolute;
+    top: 150px;
+    color: white;
+    font-family: Verdana;
+    font-size: 40px;
+    left: 120px;
+}
+
+.heading1 {
+    position: absolute;
+    top: 230px;
+    color: white;
+    left: 120px;
+    font-size: 40px;
+    font-family: Verdana;
+}
