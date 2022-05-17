@@ -36,10 +36,50 @@
             position: absolute;
             top: 30px;
             right: 120px;
-            height: 80px;
-            width: 80px;
+            height: 85px;
+            width: 85px;
             border-radius: 50%;
             border: 15px solid #00FFFF;
+        }
+
+        .half-circle {
+            position: absolute;
+            top: 30px;
+            right: 120px;
+            width: 85px;
+            height: 85px;
+            border: 15px solid rgb(153, 106, 158);
+            border-radius: 50%;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            transform: rotate(40deg);
+        }
+
+        #timer-text .text1 {
+            color: white;
+            position: absolute;
+            top: 59px;
+            right: 156px;
+            font-family: arial;
+            font-size: 8px;
+        }
+
+        #timer-text .text2 {
+            color: white;
+            position: absolute;
+            top: 58px;
+            right: 158px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+        }
+
+        #timer-text .text3 {
+            color: white;
+            position: absolute;
+            top: 107px;
+            right: 155px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 8px;
         }
 
         .question h1 {
@@ -148,6 +188,14 @@
     </div>
 
     <div id="timer"></div>
+
+    <div class="half-circle"></div>
+
+    <div id="timer-text">
+        <div class="text1">SECONDS</div>
+        <div class="text2">16</div>
+        <div class="text3">REMAINING</div>
+    </div>
 
     <div class="question">
         <h1>How can I create a <br></h1>
