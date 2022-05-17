@@ -44,7 +44,7 @@
 
         .question h1 {
             position: absolute;
-            top: 35%;
+            top: 28%;
             left: 35%;
             font-size: 55px;
             font-family: 'Outfit', sans-serif;
@@ -53,12 +53,73 @@
 
         .question h2 {
             position: absolute;
-            top: 43%;
+            top: 36%;
             left: 34%;
             font-size: 52px;
             font-family: Arial;
             font-style: bold;
             color: white;
+        }
+
+        .option1 {
+            position: absolute;
+            top: 59%;
+            left: 26%;
+            padding: 20px 50px;
+            font-size: 25px;
+            border-radius: 34px;
+            text-align: center;
+            background-color: rgb(42, 41, 84);
+            border-color: white;
+            color: white;
+            cursor: pointer;
+            box-shadow: -2px -2px white;
+        }
+
+        .option2 {
+            position: absolute;
+            top: 59%;
+            right: 26%;
+            padding: 20px 50px;
+            font-size: 25px;
+            border-radius: 34px;
+            text-align: center;
+            background-color: rgb(194, 18, 141);
+            border-color: white;
+            color: white;
+            cursor: pointer;
+            box-shadow: -2px -2px white;
+        }
+
+        .option3 {
+            position: absolute;
+            top: 72%;
+            left: 26%;
+            text-align: center;
+            padding: 20px 100px;
+            font-size: 25px;
+            border-radius: 34px;
+            text-align: center;
+            background-color: rgb(42, 41, 84);
+            border-color: white;
+            color: white;
+            cursor: pointer;
+            box-shadow: -2px -2px white;
+        }
+
+        .option4 {
+            position: absolute;
+            top: 72%;
+            right: 26%;
+            padding: 20px 70px;
+            font-size: 25px;
+            border-radius: 34px;
+            text-align: center;
+            background-color: rgb(42, 41, 84);
+            border-color: white;
+            color: white;
+            cursor: pointer;
+            box-shadow: -2px -2px white;
         }
     </style>
     <title>Question page</title>
@@ -76,6 +137,25 @@
     <div class="question">
         <h1>How can I create a <br></h1>
         <h2> <b>checkbox in HTML?</b></h2>
+    </div>
+
+    <div class="options">
+        <button class="option1">
+            &lt;input type="check"&gt;
+        </button>
+        <button class="option2">
+            &lt;input type="checkbox"&gt;
+        </button>
+        <button class="option3">
+            &lt;checkbox&gt;
+        </button>
+        <button class="option4">
+            &lt;input type="button"&gt;
+        </button>
+    </div>
+
+    <div class="footer-text">
+        <footer>QUESTION 1 <span>/ 10</span></footer>
     </div>
 </body>
 
