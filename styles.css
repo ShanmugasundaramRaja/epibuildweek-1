@@ -2,6 +2,7 @@ body,
 html {
     height: 100%;
     position: relative;
+    margin: 0;
 }
 
 .bg {
@@ -79,16 +80,15 @@ span {
     font-family: Arial;
 }
 
-input.check-box {
+[type="checkbox"] {
     position: absolute;
-    background-color: rgb(11, 17, 59);
     left: 103px;
     bottom: 15px;
     width: 20px;
     height: 20px;
     border: 3px solid #ddd;
-    appearance: none;
-    outline: none;
+    background-color: rgb(24, 18, 67);
+    /* appearance: none;*/
     cursor: pointer;
 }
 
