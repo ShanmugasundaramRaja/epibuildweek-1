@@ -36,6 +36,21 @@
             margin-top: 0%;
             font-size: 30px;
         }
+        .cong{
+            color: rgb(255, 255, 255);
+            font-family: 'Outfit', sans-serif;
+           font-size: 25px;
+           position:absolute;
+           top:420px;
+           right:550px;
+        }
+        .cong span{
+            font-family: 'Outfit', sans-serif;
+           font-size: 25px;
+           
+         color:aqua;
+        }
+        
 
         h2.left {
             color: rgb(255, 255, 255);
@@ -107,12 +122,24 @@
 
             font-weight: 100;
 
+        }.small{color: rgb(225, 225, 225);
+            
+            font-family: 'Outfit', sans-serif;
+            position:absolute;
+            left:545px;
+            top:500px;
+        
+            font-size: 20px;
+            
+            
         }
 
         .bord {
             text-align: center;
-            margin-left: 43%;
-            margin-top: 25%;
+         
+           margin-top:250px;
+           margin-bottom: 30px;
+           margin-left:560px;
             border: solid 3px white;
             padding: 1%;
             display: inline-block;
@@ -122,15 +149,31 @@
         }
 
         .top {
-            margin-top: 20%;
+            margin-top: 10%;
         }
-        .circle{
-            border:50px solid white;
-            height:250px;
-            width:250px;
-            border-radius: 100%;
-            margin:0 auto;
-            background-image:url("bg.jpg")
+        .circle {
+            position: absolute;
+            top: 330px;
+            right: 480px;
+            height: 305px;
+            width: 305px;
+            border-radius: 50%;
+            border: 35px solid #00FFFF;
+            
+        }
+
+        .circle2 {
+            position: absolute;
+            top: 330px;
+            right: 480px;
+            width: 305px;
+            height: 305px;
+            border: 35px solid rgb(189, 24, 207);
+            border-radius: 50%;transform: rotate(45deg);
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-right-color:transparent
+            
         }
     </style>
 </head>
@@ -146,11 +189,15 @@
     <div class="top">
         <h2 class="left">Correct</h2><span class="margin"></span>
         <h2 class="right">Wrong</h2>
-        <h2 class="bold">66.7%</h2><span class="margin"></span>
-        <h2 class="bold">33.3%</h2>
+        <h2 class="bold">75.0%</h2><span class="margin"></span>
+        <h2 class="bold">25.0%</h2>
         <h2 class="left-light">4/6 questions</h2><span class="margin"></span>
         <h2 class="right-light">2/6 questions</h2>
-<div class="circle"><span class="inner">Congratulations</span></div>
+<div class="circle"></div>
+<div class="circle2"></div>
+<p class="cong">Congratulations!<br><span>You passed the exam</span></p>
+<p class="small">We'll send you the certificate <br>in few minutes.<br>Check your email (including<br> promotions/spam folder)</p>
+
     
     <div class="bord">
         <p>RATE US</p>
