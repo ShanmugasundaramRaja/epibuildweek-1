@@ -46,37 +46,51 @@
     color: rgb(24, 18, 67);
     font-size: 25px;
     padding: 18px 60px;
-    bottom: 15px;
-    right: 42%;
     cursor: pointer;
     border-color: aqua;
     background: #14dcff;
     box-shadow: 0 0 50px #14dcff;
     margin-left:40%;
-    margin-top:4%
+    margin-top:10%;
+  
 }
-.but{
-    margin-bottom:4%;
-   
-    }
-.com span{
+    
+
+.inp{
+    background: transparent;
+    border-bottom: 2px solid rgb(249, 73, 184);
     font-family: 'Outfit', sans-serif;
     font-size:17px;
+    width:700px;
     color:rgb(184, 184, 184);
-    
-    display:inline-block;
-    position:relative;
-    
-   
+   outline:0;
+   border-left:0;
+   border-right:0;
+   border-top:0;
+   padding:0px 5px 5px;
+   position:absolute;
+   left:300px;
+   bottom:200px;
+   margin-top:50px;
+   margin-bottom:20px;
+   position:relative;
 }
-.com{
-    width:800px;
-    border-bottom: 1px solid rgb(249, 73, 184);
-    margin-left:20%;
-    margin-right:20%;
-    padding-bottom:20px
-    
+.smi{
+    width: 50px;
+    height:50px;
+    margin:0%;
+    padding:5px;
 }
+.im{
+    margin-left:26.5%;
+     position:absolute;
+     bottom:260px
+}
+.smi:hover{
+    filter:opacity(30%)contrast(30%)brightness(90%);
+    cursor:pointer;
+}
+
     
 
        
@@ -96,11 +110,15 @@
 <br><br><br><br><br><br><br><br>
     </div>
     <p>Leave us an open feedback about the experience so far</p>
-    <div class="com">
-        <span><br>Write your comment here</span>
-    </div>
+    
    
     <div class="but">
         <input type="button" value="MORE INFO" id="button" class="proceed">
+    </div>
+    <div>
+        <input type="input" placeholder="Write your comment here" class="inp">
+    </div>
+    <div class="im">
+        <img src="star.svg" class="smi"><img src="star.svg" class="smi"><img src="star.svg" class="smi"><img src="star.svg" class="smi"><img src="star.svg" class="smi"><img src="star.svg" class="smi"><img src="star.svg" class="smi dark"><img src="star.svg" class="smi dark"><img src="star.svg" class="smi dark"><img src="star.svg" class="smi dark">
     </div>
     
