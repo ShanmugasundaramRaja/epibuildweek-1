@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <style>
         img {
             display: inline-block;
@@ -136,45 +137,35 @@
 
         .bord {
             text-align: center;
-        cursor:pointer;
-           margin-top:250px;
-           margin-bottom: 30px;
-           margin-left:560px;
-            border: solid 3px white;
+           cursor:pointer;
+          border: solid 2px rgb(242, 242, 242);
+          margin-top:200px;
+          margin-left:560px;
+          margin-bottom:30px;
             padding: 1%;
             display: inline-block;
-            width: 160px;
-            height: 40px;
+            width: 200px;
+            height: 50px;
+            background:transparent;
+            color:rgb(241, 240, 240);
+            font-size:17px;
+            font-weight: bold;
 
         }
 
         .top {
-            margin-top: 10%;
+            margin-top: 13%;
         }
-        .circle {
-            position: absolute;
-            top: 330px;
-            right: 480px;
-            height: 305px;
-            width: 305px;
-            border-radius: 50%;
-            border: 35px solid #00FFFF;
-            
-        }
+        #myChart{
+            max-width:1000px;
+            position:absolute;
+            left:165px;
+            top:230px;
 
-        .circle2 {
-            position: absolute;
-            top: 330px;
-            right: 480px;
-            width: 305px;
-            height: 305px;
-            border: 35px solid rgb(189, 24, 207);
-            border-radius: 50%;transform: rotate(45deg);
-            border-bottom-color: transparent;
-            border-left-color: transparent;
-            border-right-color:transparent
-            
         }
+        
+            
+        
     </style>
 </head>
 
@@ -189,20 +180,45 @@
     <div class="top">
         <h2 class="left">Correct</h2><span class="margin"></span>
         <h2 class="right">Wrong</h2>
-        <h2 class="bold">75.0%</h2><span class="margin"></span>
-        <h2 class="bold">25.0%</h2>
+        <h2 class="bold">66.7%</h2><span class="margin"></span>
+        <h2 class="bold">33.3%</h2>
         <h2 class="left-light">4/6 questions</h2><span class="margin"></span>
         <h2 class="right-light">2/6 questions</h2>
-<div class="circle"></div>
-<div class="circle2"></div>
+        <canvas id="myChart"></canvas>
+        <script>
+            var xValues = ["x", "y"];
+            var yValues = [33.3, 66.7];
+            var barColors = [
+              "#D20094",
+              "#00FFFF",
+              
+            ];
+            
+            new Chart("myChart", {
+              type: "doughnut",
+              
+              data: {
+                
+                datasets: [{
+                  backgroundColor: barColors,
+                  borderColor:'transparent',
+                  data: yValues
+                }]
+              },
+              options: {
+                  cutoutPercentage:80,
+                title: {
+                  display: true,
+                  
+                  
+                }
+              }
+            });
+            </script>
 <p class="cong">Congratulations!<br><span>You passed the exam</span></p>
 <p class="small">We'll send you the certificate <br>in few minutes.<br>Check your email (including<br> promotions/spam folder)</p>
+<button onclick="window.location.href='feedback.html';" class="bord">RATE US</button>
 
-    
-    <div class="bord">
-        <p>RATE US</p>
-    </div>
-
-</body>
+   </body>
 
 </html>
