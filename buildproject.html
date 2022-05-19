@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <style>
         img {
             display: inline-block;
@@ -36,6 +37,21 @@
             margin-top: 0%;
             font-size: 30px;
         }
+        .cong{
+            color: rgb(255, 255, 255);
+            font-family: 'Outfit', sans-serif;
+           font-size: 25px;
+           position:absolute;
+           top:420px;
+           right:550px;
+        }
+        .cong span{
+            font-family: 'Outfit', sans-serif;
+           font-size: 25px;
+           
+         color:aqua;
+        }
+        
 
         h2.left {
             color: rgb(255, 255, 255);
@@ -107,31 +123,49 @@
 
             font-weight: 100;
 
+        }.small{color: rgb(225, 225, 225);
+            
+            font-family: 'Outfit', sans-serif;
+            position:absolute;
+            left:545px;
+            top:500px;
+        
+            font-size: 20px;
+            
+            
         }
 
         .bord {
             text-align: center;
-            margin-left: 43%;
-            margin-top: 25%;
-            border: solid 3px white;
+           cursor:pointer;
+          border: solid 2px rgb(242, 242, 242);
+          margin-top:200px;
+          margin-left:560px;
+          margin-bottom:30px;
             padding: 1%;
             display: inline-block;
-            width: 160px;
-            height: 40px;
+            width: 200px;
+            height: 50px;
+            background:transparent;
+            color:rgb(241, 240, 240);
+            font-size:17px;
+            font-weight: bold;
 
         }
 
         .top {
-            margin-top: 20%;
+            margin-top: 13%;
         }
-        .circle{
-            border:50px solid white;
-            height:250px;
-            width:250px;
-            border-radius: 100%;
-            margin:0 auto;
-            background-image:url("bg.jpg")
+        #myChart{
+            max-width:1000px;
+            position:absolute;
+            left:165px;
+            top:230px;
+
         }
+        
+            
+        
     </style>
 </head>
 
@@ -150,12 +184,41 @@
         <h2 class="bold">33.3%</h2>
         <h2 class="left-light">4/6 questions</h2><span class="margin"></span>
         <h2 class="right-light">2/6 questions</h2>
-<div class="circle"><span class="inner">Congratulations</span></div>
-    
-    <div class="bord">
-        <p>RATE US</p>
-    </div>
+        <canvas id="myChart"></canvas>
+        <script>
+            var xValues = ["x", "y"];
+            var yValues = [33.3, 66.7];
+            var barColors = [
+              "#D20094",
+              "#00FFFF",
+              
+            ];
+            
+            new Chart("myChart", {
+              type: "doughnut",
+              
+              data: {
+                
+                datasets: [{
+                  backgroundColor: barColors,
+                  borderColor:'transparent',
+                  data: yValues
+                }]
+              },
+              options: {
+                  cutoutPercentage:80,
+                title: {
+                  display: true,
+                  
+                  
+                }
+              }
+            });
+            </script>
+<p class="cong">Congratulations!<br><span>You passed the exam</span></p>
+<p class="small">We'll send you the certificate <br>in few minutes.<br>Check your email (including<br> promotions/spam folder)</p>
+<button onclick="window.location.href='feedback.html';" class="bord">RATE US</button>
 
-</body>
+   </body>
 
 </html>
