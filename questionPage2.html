@@ -83,30 +83,20 @@
             font-size: 8px;
         }
 
-        p {
+        .question h1 {
             position: absolute;
             top: 28%;
-            left: 24%;
+            left: 27%;
             font-size: 55px;
             font-family: 'Outfit', sans-serif;
             color: white;
         }
 
-        .question h2 {
-            position: absolute;
-            top: 36%;
-            left: 34%;
-            font-size: 52px;
-            font-family: Arial;
-            font-style: bold;
-            color: white;
-        }
 
-        /*.option1*/
-        .button1 {
+        .option1 {
             position: absolute;
-            top: 59%;
-            left: 30%;
+            top: 54%;
+            left: 23%;
             padding: 20px 50px;
             font-size: 25px;
             border-radius: 34px;
@@ -118,11 +108,15 @@
             box-shadow: -2px -2px white;
         }
 
+        button:focus {
+            background-color: rgb(194, 18, 141);
+        }
 
-        .button2 {
+
+        .option2 {
             position: absolute;
-            top: 59%;
-            right: 28%;
+            top: 54%;
+            right: 19%;
             padding: 20px 50px;
             font-size: 25px;
             border-radius: 34px;
@@ -134,28 +128,12 @@
             box-shadow: -2px -2px white;
         }
 
-        .button1:focus {
-            background-color: rgb(194, 18, 141);
-        }
-
-        .button2:focus {
-            background-color: rgb(194, 18, 141);
-        }
-
-        .button3:focus {
-            background-color: rgb(194, 18, 141);
-        }
-
-        .button4:focus {
-            background-color: rgb(194, 18, 141);
-        }
-
-        .button3 {
+        .option3 {
             position: absolute;
-            top: 72%;
-            left: 28%;
+            top: 70%;
+            left: 15%;
             text-align: center;
-            padding: 20px 70px;
+            padding: 20px 50px;
             font-size: 25px;
             border-radius: 34px;
             text-align: center;
@@ -166,11 +144,11 @@
             box-shadow: -2px -2px white;
         }
 
-        .button4 {
+        .option4 {
             position: absolute;
-            top: 72%;
-            right: 27%;
-            padding: 20px 70px;
+            top: 70%;
+            right: 17%;
+            padding: 20px 50px;
             font-size: 25px;
             border-radius: 34px;
             text-align: center;
@@ -179,26 +157,6 @@
             color: white;
             cursor: pointer;
             box-shadow: -2px -2px white;
-        }
-
-
-        .nextbutton {
-            position: absolute;
-            bottom: 23px;
-            right: 10%;
-            padding: 20px 40px;
-            font-size: 20px;
-            border-radius: 34px;
-            text-align: center;
-            background-color: rgb(42, 41, 84);
-            border-color: transparent;
-            color: white;
-            cursor: pointer;
-            box-shadow: 0 0 1px 2px white;
-        }
-
-        .nextbutton:hover {
-            box-shadow: inset 0 0 4px 4px white;
         }
 
         .footer-text {
@@ -232,42 +190,32 @@
 
     <div id="timer-text">
         <div class="text1">SECONDS</div>
-        <div class="text2">16</div>
+        <div class="text2">23</div>
         <div class="text3">REMAINING</div>
     </div>
 
-    <div class="questions"></div>
-
-    <!--  <div class="question">
-        <h1>How can I create a <br></h1>
-        <h2> <b>checkbox in HTML?</b></h2>
+    <div class="question">
+        <h1>The argument of querySelector :</h1>
     </div>
 
     <div class="options">
-        <button class="option1" id="option1">
-            &lt;input type="check"&gt;
+        <button class="option1">
+            Can be omitted
         </button>
-        <button class="option2" id="option2">
-            &lt;input type="checkbox"&gt;
+        <button class="option2">
+            Should always be a valid CSS query
         </button>
-        <button class="option3" id="option3">
-            &lt;checkbox&gt;
+        <button class="option3">
+            Can be an id, a class or a tag name
         </button>
-        <button class="option4" id="option4">
-            &lt;input type="button"&gt;
+        <button class="option4">
+            Can be an object with multiple properties
         </button>
-    </div>  -->
-
-    <div class="next-button">
-        <button class="nextbutton" id="nextbutton">NEXT</button>
     </div>
-
 
     <div class="footer-text">
-        <footer>QUESTION 1 <span>/ 10</span></footer>
+        <footer>QUESTION 2 <span>/ 10</span></footer>
     </div>
-
-    <script src="questionPage.js"></script>
 </body>
 
 </html>
