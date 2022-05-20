@@ -2,7 +2,7 @@ let position = 0;
 
 let questions = [
     { "question": "A variable in JS is declared as:", "options": ["let", "Int", "String", "New"] },
-    { "question": "Which one is not a Primitive DataType?", "options": ["char", "defined", "boolean", "number"] },
+    { "question": "Which one is not a Primitive DataType?", "options": ["number", "defined", "boolean", "char"] },
     { "question": "How to call function named foo?", "options": ["foo()();", "foo();", "function foo()", "foo;"] },
     { "question": "Role of JS in Web development?", "options": ["Style", "None", "Structure", "Behaviour"] }
 ]
