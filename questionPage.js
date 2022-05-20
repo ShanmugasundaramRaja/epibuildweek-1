@@ -1,10 +1,17 @@
-let position = 0;
+let position = 0
+let quesNum = 1
 
 let questions = [
     { "question": "A variable in JS is declared as:", "options": ["let", "Int", "String", "New"] },
-    { "question": "Which one is not a Primitive DataType?", "options": ["char", "defined", "boolean", "number"] },
+    { "question": "Which one is not a Primitive DataType?", "options": ["number", "defined", "boolean", "char"] },
     { "question": "How to call function named foo?", "options": ["foo()();", "foo();", "function foo()", "foo;"] },
-    { "question": "Role of JS in Web development?", "options": ["Style", "None", "Structure", "Behaviour"] }
+    { "question": "Role of JS in Web development?", "options": ["Style", "None", "Structure", "Behaviour"] },
+    { "question": "Tag used to set text for Title?", "options": ["title", "header", "heading", "head"] },
+    { "question": "Attribute used to add link to <a>?", "options": ["target", "alt", "href", "src"] },
+    { "question": "HTML tages are wrapped by?", "options": ["< and >", "[ and ]", "<? and >", "{ and }"] },
+    { "question": "Tag used to create drop-down list?", "options": ["<select>", "<list>", "<option>", "<dropdown>"] },
+    { "question": "Rule that is more specific important?", "options": [".test.second", ".test div p", "#myid", ".test div"] },
+    { "question": "Which is NOT a valid value for height?", "options": ["100%", "100px", "100vh", "100wn"] }
 ]
 
 const displayQuestions = function () {
@@ -20,6 +27,10 @@ const displayQuestions = function () {
                 <input type="button" class="button3" value="${questionNum.options[2]}" />
                 <input type="button" class="button4" value="${questionNum.options[3]}" />
             </div>
+        </div>
+        
+        <div class="footer-text">
+        <footer>QUESTION ${quesNum} <span>/ 10</span></footer>
         </div>`
 }
 
@@ -30,6 +41,7 @@ nextQuestion.addEventListener("click", function (e) {
         window.location = "./buildproject.html"
     } else {
         position++
+        quesNum++
         displayQuestions()
     }
 })
@@ -37,13 +49,6 @@ nextQuestion.addEventListener("click", function (e) {
 window.onload = function () {
     displayQuestions()
 }
-
-
-
-
-
-
-
 
 
 
