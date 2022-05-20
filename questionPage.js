@@ -6,6 +6,12 @@ let questions = [
     { "question": "Which one is not a Primitive DataType?", "options": ["number", "defined", "boolean", "char"] },
     { "question": "How to call function named foo?", "options": ["foo()();", "foo();", "function foo()", "foo;"] },
     { "question": "Role of JS in Web development?", "options": ["Style", "None", "Structure", "Behaviour"] },
+    { "question": "Tag used to set text for Title?", "options": ["title", "header", "heading", "head"] },
+    { "question": "Attribute used to add link to <a>?", "options": ["target", "alt", "href", "src"] },
+    { "question": "HTML tages are wrapped by?", "options": ["< and >", "[ and ]", "<? and >", "{ and }"] },
+    { "question": "Tag used to create drop-down list?", "options": ["<select>", "<list>", "<option>", "<dropdown>"] },
+    { "question": "Rule that is more specific important?", "options": [".test.second", ".test div p", "#myid", ".test div"] },
+    { "question": "Which is NOT a valid value for height?", "options": ["100%", "100px", "100vh", "100wn"] }
 ]
 
 const displayQuestions = function () {
@@ -43,13 +49,6 @@ nextQuestion.addEventListener("click", function (e) {
 window.onload = function () {
     displayQuestions()
 }
-
-
-
-
-
-
-
 
 
 
