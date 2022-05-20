@@ -1,10 +1,11 @@
-let position = 0;
+let position = 0
+let quesNum = 1
 
 let questions = [
     { "question": "A variable in JS is declared as:", "options": ["let", "Int", "String", "New"] },
     { "question": "Which one is not a Primitive DataType?", "options": ["number", "defined", "boolean", "char"] },
     { "question": "How to call function named foo?", "options": ["foo()();", "foo();", "function foo()", "foo;"] },
-    { "question": "Role of JS in Web development?", "options": ["Style", "None", "Structure", "Behaviour"] }
+    { "question": "Role of JS in Web development?", "options": ["Style", "None", "Structure", "Behaviour"] },
 ]
 
 const displayQuestions = function () {
@@ -20,6 +21,10 @@ const displayQuestions = function () {
                 <input type="button" class="button3" value="${questionNum.options[2]}" />
                 <input type="button" class="button4" value="${questionNum.options[3]}" />
             </div>
+        </div>
+        
+        <div class="footer-text">
+        <footer>QUESTION ${quesNum} <span>/ 10</span></footer>
         </div>`
 }
 
@@ -30,6 +35,7 @@ nextQuestion.addEventListener("click", function (e) {
         window.location = "./buildproject.html"
     } else {
         position++
+        quesNum++
         displayQuestions()
     }
 })
